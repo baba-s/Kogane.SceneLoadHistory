@@ -4,18 +4,17 @@ namespace Kogane
 {
 	public sealed class SceneLoadHistoryData
 	{
-		private readonly Scene         m_scene;
-		private readonly LoadSceneMode m_mode;
-
-		public string        Path          => m_scene.path;
-		public string        Name          => m_scene.name;
-		public int           BuildIndex    => m_scene.buildIndex;
-		public LoadSceneMode LoadSceneMode => m_mode;
+		public string        Path          { get; } 
+		public string        Name          { get; } 
+		public int           BuildIndex    { get; } 
+		public LoadSceneMode LoadSceneMode { get; } 
 
 		internal SceneLoadHistoryData( Scene scene, LoadSceneMode mode )
 		{
-			m_scene = scene;
-			m_mode  = mode;
+			Path  		  = scene.path;     
+			Name          = scene.name;
+			BuildIndex    = scene.buildIndex;
+			LoadSceneMode = mode;
 		}
 	}
 }
