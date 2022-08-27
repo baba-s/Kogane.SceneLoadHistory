@@ -1,4 +1,4 @@
-# UniSceneLoadHistory
+# Kogane Scene Load History
 
 シーン遷移の履歴を管理するクラス
 
