@@ -24,7 +24,7 @@ namespace Kogane
         public SceneLoadHistory( int max )
         {
             m_max  = max;
-            m_list = new List<SceneLoadHistoryData>( max );
+            m_list = new( max );
 
             SceneManager.sceneLoaded += OnSceneLoaded;
         }
